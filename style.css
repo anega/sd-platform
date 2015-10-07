@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 1;
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -437,7 +438,7 @@ button.btn {
 }
 
 .section.content .container .side-right {
-    overflow: hidden;
+    float: left;
     width: 302px;
 }
 
@@ -447,6 +448,17 @@ button.btn {
 
 .blog ul li:nth-child(odd) {
     background: #f4f4f4;
+    position: relative;
+}
+
+.blog ul li:nth-child(odd):after {
+    background: #f4f4f4;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 300px;
+    width: 1000px;
 }
 
 .blog ul li .blogpost-user {
