@@ -198,6 +198,10 @@ button.btn {
     padding: 31px 0;
 }
 
+.header-top .logo {
+    float: left;
+}
+
 .header-top .social-menu,
 .header-top p,
 .header-top .btn {
@@ -227,13 +231,19 @@ button.btn {
 .lang-selector {
     border-right: 1px solid #d1d1d1;
     color: #acc3cb;
-    line-height: 55px;
-    padding-right: 40px;
+    float: right;
+    height: 55px;
+    padding: 20px 40px 0 0;
     text-transform: uppercase;
 }
 
-.lang-selector img {
-    margin-left: 8px;
+.lang-selector li {
+    float: left;
+    margin-right: 10px;
+}
+
+.lang-selector li img {
+    cursor: pointer;
 }
 
 .banner {
@@ -347,6 +357,10 @@ button.btn {
     text-decoration: none;
 }
 
+.photo {
+    margin-bottom: 60px;
+}
+
 .photo .slider .active-img {
     position: relative;
     margin-bottom: 10px;
@@ -401,9 +415,76 @@ button.btn {
     display: none;
 }
 
+.video .title {
+    margin-bottom: 55px;
+}
+
+.video ul li {
+    float: left;
+    padding-left: 20px;
+    width: 33.333%;
+}
+
+.video ul li img {
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.video ul li h2 {
+    font: 700 21px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
 .section.content .container .side-right {
     overflow: hidden;
     width: 302px;
+}
+
+.blog ul li {
+    padding: 20px 15px 25px;
+}
+
+.blog ul li:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+.blog ul li .blogpost-user {
+    float: left;
+    margin-right: 20px;
+}
+
+.blog ul li .blogpost-user img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.blog ul li .blogpost-user .date {
+    color: #7a7a7a;
+    font: 300 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.blog ul li .blog-text-preview {
+    overflow: hidden;
+}
+
+.blog ul li .blog-text-preview h2 {
+    color: #4d5e6c;
+    font: 400 16px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+.blog ul li .blog-text-preview p {
+    color: #7a7a7a;
+    font: 300 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.blog ul li .blog-text-preview a {
+    font-size: 13px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
