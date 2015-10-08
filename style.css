@@ -110,8 +110,9 @@ body {
 .btn {
     border-radius: 5px;
     cursor: pointer;
+    font: 400 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     height: 58px;
-    line-height: 58px;
+    line-height: 57px;
     padding: 0 10px;
     text-transform: uppercase;
 }
@@ -170,13 +171,14 @@ button.btn {
     border-top: 1px solid #d1d1d1;
     color: #363636;
     font: 300 35px 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    padding: 25px 0 15px;
+    padding: 21px 0 16px;
 }
 
 /* Date styles across the site */
 .date {
     color: #878787;
     font: 400 15px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 14px;
     margin-bottom: 15px;
 }
 
@@ -209,8 +211,12 @@ button.btn {
     float: right;
 }
 
+.header-top .btn {
+    margin-top: -3px;
+}
+
 .header-top .btn.btn-grey {
-    margin-left: 14px;
+    margin-left: 16px;
     width: 160px;
 }
 
@@ -225,6 +231,7 @@ button.btn {
 }
 
 .header-top .btn.btn-blue {
+    font-size: 14px;
     margin-left: 40px;
     width: 210px;
 }
@@ -304,7 +311,9 @@ button.btn {
 
 .main-nav li a {
     color: #fff;
+    font: 400 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     display: block;
+    line-height: 52px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -324,12 +333,12 @@ button.btn {
 
 .news ul li {
     float: left;
-    padding-right: 17px;
+    padding-right: 12px;
     width: 33.333%;
 }
 
 .news ul li img {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     width: 100%;
     height: auto;
 }
@@ -345,6 +354,7 @@ button.btn {
 .news ul li p {
     color: #757575;
     font: 400 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 18px;
     margin-bottom: 15px;
 }
 
