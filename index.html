@@ -8,8 +8,17 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Font awesome icons -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- FlexSlider styles -->
+    <link rel="stylesheet" href="styles/flexslider.css"/>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Jquery(used by flex slider) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- FlexSlider main script -->
+    <script src="js/jquery.flexslider.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
 </head>
 <body>
 <div class="section header">
@@ -43,7 +52,22 @@
         </div>
     </div>
 
-    <div class="banner"></div>
+    <div id="banner" class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/banner-1.jpg"/>
+            </li>
+            <li>
+                <img src="images/banner-2.jpg"/>
+            </li>
+            <li>
+                <img src="images/banner-3.jpg"/>
+            </li>
+            <li>
+                <img src="images/banner-4.jpg"/>
+            </li>
+        </ul>
+    </div>
 
     <div class="nav-wrap">
         <ul class="container main-nav">
@@ -90,18 +114,42 @@
 
             <div class="block photo clearfix">
                 <h1 class="title">Фото</h1>
-                <div class="slider">
-                    <div class="active-img">
-                        <span class="prev"></span>
-                        <img src="images/photo-lorem-1.jpg" alt="">
-                        <span class="next"></span>
-                    </div>
-                    <ul>
-                        <li><img src="images/photo-preview-lorem-1.jpg" alt=""></li>
-                        <li><img src="images/photo-preview-lorem-2.jpg" alt=""></li>
-                        <li class="active"><img src="images/photo-preview-lorem-3.jpg" alt=""></li>
-                        <li><img src="images/photo-preview-lorem-4.jpg" alt=""></li>
-                        <li><img src="images/photo-preview-lorem-5.jpg" alt=""></li>
+                <div id="slider" class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/photo-lorem-1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-lorem-1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-lorem-1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-lorem-1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-lorem-1.jpg" />
+                        </li>
+                    </ul>
+                </div>
+                <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/photo-preview-lorem-1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-preview-lorem-2.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-preview-lorem-3.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-preview-lorem-4.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/photo-preview-lorem-5.jpg" />
+                        </li>
                     </ul>
                 </div>
             </div>

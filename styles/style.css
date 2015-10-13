@@ -254,10 +254,10 @@ button.btn {
     cursor: pointer;
 }
 
-.banner {
-    background: url(images/banner-home.jpg) center center no-repeat;
-    height: 768px;
-}
+/*.banner {*/
+    /*background: url(images/banner-home.jpg) center center no-repeat;*/
+    /*height: 768px;*/
+/*}*/
 
 .nav-wrap {
     background: rgb(123, 206, 226); /* Old browsers */
@@ -534,3 +534,20 @@ button.btn {
     float: right;
     line-height: 85px;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------- Flex slider overwrite */
+/* ------------------------------------------------------------------------------------------------------------------ */
+.flexslider {
+    background: transparent;
+    border: none;
+    margin: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
