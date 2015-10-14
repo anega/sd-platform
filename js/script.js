@@ -13,10 +13,11 @@ $(window).load(function() {
     $('#carousel').flexslider({
         animation: "slide",
         controlNav: false,
+        directionNav: false,
         animationLoop: true,
         slideshow: false,
-        itemWidth: 150,
-        itemMargin: 5,
+        itemWidth: 174,
+        itemMargin: 0,
         asNavFor: '#slider'
     });
 

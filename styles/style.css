@@ -255,8 +255,8 @@ button.btn {
 }
 
 /*.banner {*/
-    /*background: url(images/banner-home.jpg) center center no-repeat;*/
-    /*height: 768px;*/
+/*background: url(images/banner-home.jpg) center center no-repeat;*/
+/*height: 768px;*/
 /*}*/
 
 .nav-wrap {
@@ -322,7 +322,7 @@ button.btn {
 /* ----------------------------------------------------------------------------------------------------- Main content */
 /* ------------------------------------------------------------------------------------------------------------------ */
 .section.content .container {
-    padding: 40px 0 60px;
+    padding: 40px 0;
 }
 
 .section.content .container .main-content {
@@ -372,58 +372,69 @@ button.btn {
     margin-bottom: 60px;
 }
 
-.photo .slider .active-img {
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.photo .slider .active-img span {
+.flex-direction-nav a {
     background: rgba(0, 0, 0, .24);
-    cursor: pointer;
-    display: none;
-    margin-top: -26px;
-    position: absolute;
-    top: 50%;
     width: 49px;
     height: 53px;
 }
 
-.photo .slider:hover .active-img span {
-    display: block;
-}
-
-.photo .slider .active-img .prev {
+.flexslider:hover .flex-direction-nav .flex-prev {
     left: 0;
 }
 
-.photo .slider .active-img .next {
+.flexslider:hover .flex-direction-nav .flex-next {
     right: 0;
 }
 
-.photo .slider ul li {
-    cursor: pointer;
-    float: left;
-    position: relative;
+.flexslider .flex-direction-nav a {
+    text-indent: 1000px;
 }
 
-.photo .slider ul li img {
-    max-width: 172px;
-    max-height: 114px;
-}
-
-.photo .slider ul li:before {
-    background: rgba(256, 256, 256, .6);
+.flexslider .flex-direction-nav a:before,
+.flexslider .flex-direction-nav a:after {
+    background: #fff;
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 20px;
+    right: 15px;
+    width: 17px;
+    height: 2px;
 }
 
-.photo .slider ul li.active:before,
-.photo .slider ul li:hover:before {
-    display: none;
+.flex-direction-nav a.flex-prev:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.flex-direction-nav a.flex-next:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.flex-direction-nav a.flex-prev:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.flex-direction-nav a.flex-next:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.flexslider .flex-direction-nav a:after {
+    top: 31px;
 }
 
 .video .title {
@@ -432,7 +443,7 @@ button.btn {
 
 .video ul li {
     float: left;
-    padding-left: 20px;
+    padding-right: 20px;
     width: 33.333%;
 }
 
@@ -547,7 +558,17 @@ button.btn {
     box-shadow: none;
 }
 
-#carousel li {margin-right: 5px;}
-#carousel img {display: block; opacity: .5; cursor: pointer;}
-#carousel img:hover {opacity: 1;}
-#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+#carousel img {
+    display: block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+#carousel img:hover {
+    opacity: 1;
+}
+
+#carousel .flex-active-slide img {
+    opacity: 1;
+    cursor: default;
+}
