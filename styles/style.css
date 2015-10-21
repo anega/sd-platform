@@ -107,6 +107,34 @@ body {
     width: 1170px;
 }
 
+.title {
+    color: #363636;
+    font: 300 35px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.page-title {
+    border-bottom: 1px solid #ff7474;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+}
+
+.author {
+    color: #bebebe;
+    font: 400 15px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.author span {
+    color: #646464;
+}
+
+.bordered-title {
+    border-left: 10px solid #66c4dd;
+    color: #363636;
+    font: 700 21px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
 .btn {
     border-radius: 5px;
     cursor: pointer;
@@ -136,6 +164,36 @@ button.btn {
 .btn.btn-blue:hover {
     background: #46c3ee;
     text-shadow: 0 0 2px #fff;
+}
+
+.pagination li {
+    float: left;
+    margin: 0 12px;
+}
+
+.pagination li a {
+    color: #8c8c8c;
+    display: block;
+    font: 400 14px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+}
+
+.pagination li:hover a,
+.pagination li.active a {
+    background: #d1d1d1;
+    color: #fff;
+}
+
+.pagination li:first-child:hover a,
+.pagination li.active:first-child a,
+.pagination li:last-child:hover a,
+.pagination li.active:last-child a {
+    background: none;
+    color: #05a0c8;
 }
 
 /* Social menu */
@@ -169,8 +227,6 @@ button.btn {
 
 .block .title {
     border-top: 1px solid #d1d1d1;
-    color: #363636;
-    font: 300 35px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     padding: 21px 0 16px;
 }
 
@@ -305,7 +361,8 @@ button.btn {
     background: #1eaace;
 }
 
-.main-nav li:hover {
+.main-nav li:hover,
+.main-nav li.active {
     background: #5ea2b9;
 }
 
@@ -325,7 +382,7 @@ button.btn {
     padding: 40px 0;
 }
 
-.section.content .container .main-content {
+.sidebar-right .section.content .container .main-content {
     float: left;
     margin-right: 23px;
     width: 845px;
@@ -344,11 +401,7 @@ button.btn {
 }
 
 .news ul li h2 {
-    border-left: 10px solid #66c4dd;
-    color: #363636;
-    font: 700 21px 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    margin-bottom: 12px;
-    padding-left: 10px;
+    font-size: 21px;
 }
 
 .news ul li p {
@@ -544,6 +597,92 @@ button.btn {
     color: #fff;
     float: right;
     line-height: 85px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ PAGES */
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* News page */
+/*.main-content.news-page > ul > li * {*/
+    /*position: relative;*/
+    /*z-index: 1;*/
+/*}*/
+
+.main-content.news-page > ul > li {
+    padding: 66px 0;
+}
+
+.main-content.news-page > ul > li:nth-child(even) {
+    background: #f4f4f4;
+    position: relative;
+}
+
+.main-content.news-page > ul > li:nth-child(even):before,
+.main-content.news-page > ul > li:nth-child(even):after {
+    background: #f4f4f4;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.main-content.news-page > ul > li:nth-child(even):before {
+    left: -100%;
+}
+
+.main-content.news-page > ul > li:nth-child(even):after {
+    right: -100%;
+}
+
+.main-content.news-page ul li:first-child {
+    padding-top: 0;
+}
+
+.main-content.news-page ul li h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.main-content.news-page ul li .article-text {
+    color: #838383;
+    font: 400 15px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+}
+
+.main-content.news-page .article-media-prev {
+    float: left;
+    margin: 0 30px 45px 0;
+}
+
+.main-content.news-page .article-footer {
+    border-top: 1px solid #aeaeae;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.main-content.news-page .article-footer .share-news {
+    float: left;
+}
+
+.main-content.news-page .article-footer .share-news p,
+.main-content.news-page .article-footer .share-news .social-menu {
+    display: inline-block;
+}
+
+.main-content.news-page .article-footer .share-news p {
+    color: #1c1c1c;
+    font-size: 15px;
+    vertical-align: super;
+}
+
+.main-content.news-page .article-footer .share-news .social-menu {
+    margin: 0;
+}
+
+.main-content.news-page .article-footer .author {
+    float: right;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
