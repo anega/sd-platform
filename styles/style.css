@@ -645,6 +645,11 @@ button.btn {
     margin-bottom: 25px;
 }
 
+.main-content.news-page ul li .date,
+.main-content.news-page ul li .bordered-title {
+    overflow: hidden;
+}
+
 .main-content.news-page ul li .article-text {
     color: #838383;
     font: 400 15px 'Roboto', 'Helvetica', 'Arial', sans-serif;
