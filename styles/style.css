@@ -297,7 +297,7 @@ button.btn {
     color: #acc3cb;
     float: right;
     height: 55px;
-    padding: 20px 40px 0 0;
+    padding: 20px 31px 0 0;
     text-transform: uppercase;
 }
 
@@ -603,22 +603,25 @@ button.btn {
 /* ------------------------------------------------------------------------------------------------------------ PAGES */
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* News page */
-/*.main-content.news-page > ul > li * {*/
-    /*position: relative;*/
-    /*z-index: 1;*/
-/*}*/
+.news-page .section.content .container {
+    padding-top: 49px;
+}
 
-.main-content.news-page > ul > li {
+.news-page .page-title {
+    padding-bottom: 22px;
+}
+
+.news-page .main-content > ul > li {
     padding: 66px 0;
 }
 
-.main-content.news-page > ul > li:nth-child(even) {
+.news-page .main-content > ul > li:nth-child(even) {
     background: #f4f4f4;
     position: relative;
 }
 
-.main-content.news-page > ul > li:nth-child(even):before,
-.main-content.news-page > ul > li:nth-child(even):after {
+.news-page .main-content > ul > li:nth-child(even):before,
+.news-page .main-content > ul > li:nth-child(even):after {
     background: #f4f4f4;
     content: '';
     position: absolute;
@@ -628,65 +631,71 @@ button.btn {
     z-index: 0;
 }
 
-.main-content.news-page > ul > li:nth-child(even):before {
+.news-page .main-content > ul > li:nth-child(even):before {
     left: -100%;
 }
 
-.main-content.news-page > ul > li:nth-child(even):after {
+.news-page .main-content > ul > li:nth-child(even):after {
     right: -100%;
 }
 
-.main-content.news-page ul li:first-child {
+.news-page .main-content ul li:first-child {
     padding-top: 0;
 }
 
-.main-content.news-page ul li h2 {
+.news-page .main-content ul li h2 {
     font-size: 28px;
     margin-bottom: 25px;
 }
 
-.main-content.news-page ul li .date,
-.main-content.news-page ul li .bordered-title {
+.news-page .main-content ul li .date,
+.news-page .main-content ul li .bordered-title {
     overflow: hidden;
 }
 
-.main-content.news-page ul li .article-text {
+.news-page .main-content ul li .article-text {
     color: #838383;
     font: 400 15px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-style: italic;
+    line-height: 26px;
 }
 
-.main-content.news-page .article-media-prev {
+.news-page .main-content .article-media-prev {
     float: left;
     margin: 0 30px 45px 0;
 }
 
-.main-content.news-page .article-footer {
+.news-page .main-content .article-footer {
     border-top: 1px solid #aeaeae;
-    margin-top: 25px;
+    margin-top: 22px;
     padding-top: 20px;
 }
 
-.main-content.news-page .article-footer .share-news {
+.news-page .main-content .article-footer .share-news {
     float: left;
 }
 
-.main-content.news-page .article-footer .share-news p,
-.main-content.news-page .article-footer .share-news .social-menu {
+.news-page .main-content .article-footer .share-news p,
+.news-page .main-content .article-footer .share-news .social-menu {
     display: inline-block;
 }
 
-.main-content.news-page .article-footer .share-news p {
+.news-page .main-content .article-footer .share-news p {
     color: #1c1c1c;
     font-size: 15px;
     vertical-align: super;
 }
 
-.main-content.news-page .article-footer .share-news .social-menu {
+.news-page .main-content .article-footer .share-news .social-menu {
     margin: 0;
 }
 
-.main-content.news-page .article-footer .author {
+.news-page .main-content .article-footer .share-news .social-menu li a {
+    width: 20px;
+    height: 20px;
+}
+
+.news-page .main-content .article-footer .author {
     float: right;
 }
 
