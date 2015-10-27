@@ -40,6 +40,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    cursor: pointer;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -772,7 +776,6 @@ button.btn {
 
 .blogs-page ul .blog-author {
     float: left;
-    /*margin-right: 35px;*/
 }
 
 .blogs-page ul .blog-author img {
@@ -823,6 +826,113 @@ button.btn {
 .blogs-page .article-footer .date {
     float: right;
     font-size: 13px;
+}
+
+/* SD page */
+.sd-page .content-list > li {
+    padding: 66px 0;
+}
+
+.sd-page .content-list > li:first-child {
+    padding-top: 0;
+}
+
+.sd-page .content-list > li:nth-child(even) {
+    background: #f4f4f4;
+    position: relative;
+}
+
+.sd-page .content-list > li:nth-child(even):before,
+.sd-page .content-list > li:nth-child(even):after {
+    background: #f4f4f4;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.sd-page .content-list > li:nth-child(even):before {
+    left: -100%;
+}
+
+.sd-page .content-list > li:nth-child(even):after {
+    right: -100%;
+}
+
+.sd-page .content-list img {
+    float: left;
+    margin-right: 30px;
+    max-width: 384px;
+}
+
+.sd-page .content-list .blog-content {
+    overflow: hidden;
+}
+
+.sd-page .content-list .blog-content .date {
+    margin-bottom: 13px;
+}
+
+.sd-page .content-list h2 {
+    color: #1c1c1c;
+    font: 400 28px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 0;
+    padding: 0 0 2px 24px;
+}
+
+.sd-page .content-list h4 {
+    color: #1c1c1c;
+    font: 400 14px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 25px;
+    margin-bottom: 18px;
+}
+
+.sd-page .content-list .article-text {
+    margin-bottom: 20px;
+}
+
+.sd-page .article-footer {
+    border-top: 1px solid #aeaeae;
+    margin-top: 41px;
+    padding-top: 20px;
+}
+
+.sd-page .share-news {
+    float: left;
+}
+
+.sd-page .share-news p,
+.sd-page .share-news .social-menu {
+    float: left;
+}
+
+.sd-page .share-news p {
+    color: #1c1c1c;
+    font: 400 15px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-right: 10px;
+}
+
+.sd-page .share-news .social-menu {
+    margin: -2px 0 0;
+}
+
+.sd-page .share-news .social-menu li a {
+    font-size: 11px;
+    line-height: 18px;
+    width: 20px;
+    height: 20px;
+}
+
+.sd-page .author {
+    float: right;
+}
+
+.sd-page .author a {
+    color: #66c4dd;
+    text-decoration: none;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
