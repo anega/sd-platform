@@ -695,9 +695,14 @@ button.btn {
 }
 
 /* Blog page */
+.blogs-page .page-title {
+    margin-bottom: 68px;
+    padding-bottom: 22px;
+}
+
 .blog-instruments {
     float: right;
-    margin-top: -96px;
+    margin-top: -114px;
 }
 
 #blog-categories,
@@ -714,6 +719,7 @@ button.btn {
 #blog-categories {
     background: transparent url(../images/arr-down.png) 102px center no-repeat;
     border: 1px solid #e8e8e8;
+    cursor: pointer;
     outline: none;
     margin-right: 8px;
     padding: 0 20px 0 25px;
@@ -727,6 +733,7 @@ button.btn {
 .blog-instruments button {
     background: #e8e8e8;
     border: none;
+    cursor: pointer;
     padding: 0 10px;
 }
 
@@ -736,6 +743,27 @@ button.btn {
 
 .blogs-page .main-content > ul li:nth-child(even) {
     background: #f4f4f4;
+    position: relative;
+}
+
+.blogs-page .main-content > ul li:nth-child(even):before,
+.blogs-page .main-content > ul li:nth-child(even):after {
+    background: #f4f4f4;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.blogs-page .main-content > ul li:nth-child(even):before {
+    left: -100%;
+}
+
+.blogs-page .main-content > ul li:nth-child(even):after {
+    right: -100%;
 }
 
 .blogs-page .main-content > ul li:first-child {
@@ -744,7 +772,7 @@ button.btn {
 
 .blogs-page ul .blog-author {
     float: left;
-    margin-right: 35px;
+    /*margin-right: 35px;*/
 }
 
 .blogs-page ul .blog-author img {
@@ -760,20 +788,23 @@ button.btn {
     font: 300 18px 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-.blogs-page ul li > h2,
-.blogs-page ul .article-text {
-    overflow: hidden;
+.blogs-page .blog-content {
+    margin-left: 165px;
 }
 
-.blogs-page ul li > h2 {
+.blogs-page .blog-content h2 {
     color: #1c1c1c;
     font: 400 28px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     margin: 0 0 20px;
 }
 
+.blogs-page .blog-content img {
+    margin-bottom: 20px;
+}
+
 .blogs-page .article-footer {
     border-top: 1px solid #ff7474;
-    margin: 35px 0 0 163px;
+    margin: 35px 0 0;
     padding-top: 12px;
 }
 
