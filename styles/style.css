@@ -1041,6 +1041,124 @@ button.btn {
     margin-left: 16px;
 }
 
+/* Contacts page */
+.contact-page .section.content {
+    background: url(../images/bg-contact.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 527px;
+}
+
+.contact-page .section.content .container .main-content {
+    padding: 35px 0 85px;
+}
+
+.contact-us {
+    float: left;
+    width: 42%;
+}
+
+.contact-us .title {
+    color: #fff;
+    font-size: 46px;
+    margin-bottom: 50px;
+}
+
+.contact-us li {
+    color: #fff;
+    font: 300 22px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 25px;
+}
+
+.contact-us li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-us li a:last-child {
+    display: block;
+    margin-left: 38px;
+}
+
+.contact-us li:last-child p:nth-child(2) {
+    display: inline-block;
+}
+
+.contact-us li:last-child p:last-child {
+    margin-left: 35px;
+}
+
+.contact-us .fa {
+    color: #ff3946;
+    margin-right: 10px;
+}
+
+.contact-us .fa.fa-home {
+    font-size: 27px;
+}
+
+.contact-us .fa.fa-phone {
+    font-size: 25px;
+}
+
+.ask-us {
+    overflow: hidden;
+}
+
+.ask-us > h2 {
+    color: #fff;
+    font: 300 25px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 15px;
+}
+
+.ask-us input,
+.ask-us button,
+.ask-us textarea {
+    outline: none;
+}
+
+.ask-us input,
+.ask-us textarea {
+    background: rgba(256, 256, 256, .26);
+    border: none;
+    color: rgba(256, 256, 256, .54);
+    font: 700 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    padding: 15px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ask-us input {
+    height: 49px;
+    line-height: 49px;
+    margin: 0 7px 9px 0;
+    width: 218px;
+}
+
+.ask-us input:last-of-type {
+    margin-right: 0;
+    margin-left: 2px;
+}
+
+.ask-us textarea {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.ask-us button {
+    background: #46c3ee;
+    border: none;
+    color: #fff;
+    font: 400 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 58px;
+    text-transform: uppercase;
+    width: 210px;
+    height: 58px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* -------------------------------------------------------------------------------------------- Flex slider overwrite */
 /* ------------------------------------------------------------------------------------------------------------------ */
