@@ -1049,12 +1049,13 @@ button.btn {
 }
 
 .contact-page .section.content .container .main-content {
-    padding: 35px 0 85px;
+    padding: 29px 0 95px;
 }
 
 .contact-us {
     float: left;
-    width: 42%;
+    margin-right: 1%;
+    width: 41%;
 }
 
 .contact-us .title {
@@ -1066,7 +1067,7 @@ button.btn {
 .contact-us li {
     color: #fff;
     font: 300 22px 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .contact-us li a {
@@ -1076,7 +1077,7 @@ button.btn {
 
 .contact-us li a:last-child {
     display: block;
-    margin-left: 38px;
+    margin-left: 43px;
 }
 
 .contact-us li:last-child p:nth-child(2) {
@@ -1084,12 +1085,12 @@ button.btn {
 }
 
 .contact-us li:last-child p:last-child {
-    margin-left: 35px;
+    margin-left: 42px;
 }
 
 .contact-us .fa {
     color: #ff3946;
-    margin-right: 10px;
+    margin-right: 17px;
 }
 
 .contact-us .fa.fa-home {
@@ -1107,7 +1108,7 @@ button.btn {
 .ask-us > h2 {
     color: #fff;
     font: 300 25px 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    margin-bottom: 15px;
+    margin: 11px 0 17px;
 }
 
 .ask-us input,
