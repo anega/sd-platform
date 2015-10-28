@@ -938,6 +938,8 @@ button.btn {
 /* For activists page */
 .activist-page .page-title {
     margin-bottom: 0;
+    padding-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .activist-page .content-list {
