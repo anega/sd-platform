@@ -935,6 +935,110 @@ button.btn {
     text-decoration: none;
 }
 
+/* For activists page */
+.activist-page .page-title {
+    margin-bottom: 0;
+}
+
+.activist-page .content-list {
+    margin-bottom: 65px;
+}
+
+.activist-page .content-list li {
+    padding: 20px 30px;
+    zoom: 1;
+}
+
+.activist-page .content-list li:first-child {
+    background: #f9f9f9;
+    height: 58px;
+}
+
+.activist-page .content-list li:first-child p {
+    color: #5f5f5f;
+    font: 400 14px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.activist-page .content-list li:first-child p .fa {
+    color: #05a0c8;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.activist-page .content-list li:first-child p .fa-long-arrow-up {
+    display: none;
+}
+
+.activist-page .content-list li:not(:first-child) {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.activist-page .content-list li:before,
+.activist-page .content-list li:after {
+    content: "";
+    display: table;
+}
+
+.activist-page .content-list li:after {
+    clear: both;
+}
+
+.activist-page .content-list li:not(:first-child) > * {
+    height: 51px;
+}
+
+.activist-page .content-list li > * {
+    float: left;
+}
+
+.activist-page .content-list .file-name {
+    width: 48.71%;
+}
+
+.activist-page .content-list li:not(:first-child) .file-name img {
+    float: left;
+    margin-right: 20px;
+    max-width: 68px;
+    max-height: 51px;
+    -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+}
+
+.activist-page .content-list li:not(:first-child) .file-name p {
+    color: #525252;
+    font: 400 18px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 51px;
+    overflow: hidden;
+}
+
+.activist-page .content-list li > p {
+    width: 22.22%;
+}
+
+.activist-page .content-list .file-size {
+    width: 29.07%;
+}
+
+.activist-page .content-list li:not(:first-child) > p,
+.activist-page .content-list li:not(:first-child) .file-size {
+    color: #5f5f5f;
+    font: 400 14px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 51px;
+}
+
+.activist-page .content-list .file-size > * {
+    display: inline-block;
+}
+
+.activist-page .content-list li:not(:first-child) .file-size .fa {
+    color: #05a0c8;
+    float: right;
+    font-size: 18px;
+    line-height: 51px;
+    margin-left: 16px;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* -------------------------------------------------------------------------------------------- Flex slider overwrite */
 /* ------------------------------------------------------------------------------------------------------------------ */
