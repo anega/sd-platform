@@ -1111,6 +1111,8 @@ button.btn {
 /* For activists page */
 .activist-page .page-title {
     margin-bottom: 0;
+    padding-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .activist-page .content-list {
@@ -1210,6 +1212,125 @@ button.btn {
     font-size: 18px;
     line-height: 51px;
     margin-left: 16px;
+}
+
+/* Contacts page */
+.contact-page .section.content {
+    background: url(../images/bg-contact.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 527px;
+}
+
+.contact-page .section.content .container .main-content {
+    padding: 29px 0 95px;
+}
+
+.contact-us {
+    float: left;
+    margin-right: 1%;
+    width: 41%;
+}
+
+.contact-us .title {
+    color: #fff;
+    font-size: 46px;
+    margin-bottom: 50px;
+}
+
+.contact-us li {
+    color: #fff;
+    font: 300 22px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 28px;
+}
+
+.contact-us li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-us li a:last-child {
+    display: block;
+    margin-left: 43px;
+}
+
+.contact-us li:last-child p:nth-child(2) {
+    display: inline-block;
+}
+
+.contact-us li:last-child p:last-child {
+    margin-left: 42px;
+}
+
+.contact-us .fa {
+    color: #ff3946;
+    margin-right: 17px;
+}
+
+.contact-us .fa.fa-home {
+    font-size: 27px;
+}
+
+.contact-us .fa.fa-phone {
+    font-size: 25px;
+}
+
+.ask-us {
+    overflow: hidden;
+}
+
+.ask-us > h2 {
+    color: #fff;
+    font: 300 25px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin: 11px 0 17px;
+}
+
+.ask-us input,
+.ask-us button,
+.ask-us textarea {
+    outline: none;
+}
+
+.ask-us input,
+.ask-us textarea {
+    background: rgba(256, 256, 256, .26);
+    border: none;
+    color: rgba(256, 256, 256, .54);
+    font: 700 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    padding: 15px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ask-us input {
+    height: 49px;
+    line-height: 49px;
+    margin: 0 7px 9px 0;
+    width: 218px;
+}
+
+.ask-us input:last-of-type {
+    margin-right: 0;
+    margin-left: 2px;
+}
+
+.ask-us textarea {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.ask-us button {
+    background: #46c3ee;
+    border: none;
+    color: #fff;
+    font: 400 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 58px;
+    text-transform: uppercase;
+    width: 210px;
+    height: 58px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
