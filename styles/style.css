@@ -316,12 +316,15 @@ button.btn {
 }
 
 .lang-selector li {
+    cursor: pointer;
     float: left;
+    font-weight: 300;
     margin-right: 10px;
+    text-transform: none;
 }
 
-.lang-selector li img {
-    cursor: pointer;
+.lang-selector li:hover {
+    text-decoration: underline;
 }
 
 .nav-wrap {
