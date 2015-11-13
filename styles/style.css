@@ -240,7 +240,7 @@ button.btn {
 }
 
 .block .title {
-    border-top: 1px solid #d1d1d1;
+    border-top: 1px solid #ff7474;
     padding: 21px 0 16px;
 }
 
@@ -665,7 +665,7 @@ button.btn {
 }
 
 .about-us .section-heading:after {
-    background: #d1d1d1;
+    background: #ff7474;
     content: '';
     margin-left: -25px;
     position: absolute;
