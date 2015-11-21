@@ -683,7 +683,7 @@ button.btn {
     padding-bottom: 50px;
 }
 
-.about-us .group ul {
+.about-us .group .container > ul {
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -691,13 +691,14 @@ button.btn {
     width: 1150px;
 }
 
-.about-us .group ul li {
-    float: left;
+.about-us .group .container > ul > li {
+    display: inline-block;
+    margin-bottom: 20px;
     padding: 0 25px;
-    width: 25%;
+    width: 24.5%; /* Magic number - because when width is greater than 24.7% there are only 3 items feats the row */
 }
 
-.about-us .group ul li img {
+.about-us .group .container > ul > li img {
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
@@ -713,6 +714,20 @@ button.btn {
     color: #7b7b7b;
     font: 300 16px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 22px;
+}
+
+.about-us .group ul li .social-menu {
+    text-align: center;
+}
+
+.about-us .group ul li .social-menu li {
+    float: none;
+    display: inline-block;
+}
+
+.about-us .group ul li .social-menu li a {
+    border-color: #36acc6;
+    color: #36acc6;
 }
 
 .about-us .initiative-list {
@@ -755,6 +770,12 @@ button.btn {
     content: '• ';
     position: absolute;
     left: 0;
+}
+
+.about-us .initiative-list .read-more {
+    display: block;
+    margin: 30px 0 0 30px;
+    text-align: left;
 }
 
 .about-us .partners {
