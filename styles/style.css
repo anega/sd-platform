@@ -792,6 +792,15 @@ button.btn {
     text-align: left;
 }
 
+.about-us .initiative-list > li:first-child .read-more {
+    margin-left: 70px;
+}
+
+.about-us .initiative-list > li:nth-child(2) .read-more {
+    margin-left: 0;
+    text-align: center;
+}
+
 .about-us .partners {
     padding-bottom: 195px !important;
 }
