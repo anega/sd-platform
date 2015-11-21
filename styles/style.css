@@ -170,11 +170,14 @@ button.btn {
     background: #fff;
     border: 1px solid #05a0c8;
     color: #05a0c8;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn.btn-blue:hover {
     background: #46c3ee;
-    text-shadow: 0 0 2px #fff;
+    border: none;
+    color: #fff;
 }
 
 .pagination li {
@@ -237,7 +240,7 @@ button.btn {
 }
 
 .block .title {
-    border-top: 1px solid #d1d1d1;
+    border-top: 1px solid #ff7474;
     padding: 21px 0 16px;
 }
 
@@ -313,12 +316,15 @@ button.btn {
 }
 
 .lang-selector li {
+    cursor: pointer;
     float: left;
+    font-weight: 300;
     margin-right: 10px;
+    text-transform: none;
 }
 
-.lang-selector li img {
-    cursor: pointer;
+.lang-selector li:hover {
+    text-decoration: underline;
 }
 
 .nav-wrap {
@@ -659,7 +665,7 @@ button.btn {
 }
 
 .about-us .section-heading:after {
-    background: #d1d1d1;
+    background: #ff7474;
     content: '';
     margin-left: -25px;
     position: absolute;
@@ -756,6 +762,14 @@ button.btn {
 .about-us .initiative-list li ul {
     color: #838383;
     text-align: left;
+}
+
+.about-us .initiative-list li:first-child ul {
+    padding-left: 40px;
+}
+
+.about-us .initiative-list li:nth-child(2) ul {
+    padding-left: 80px;
 }
 
 .about-us .initiative-list li ul li {
@@ -1236,10 +1250,17 @@ button.btn {
 }
 
 /* Contacts page */
+.contact-page {
+    position: relative;
+}
+
 .contact-page .section.content {
     background: url(../images/bg-contact.jpg) center center no-repeat;
     background-size: cover;
-    min-height: 527px;
+    position: absolute;
+    top: 167px;
+    bottom: 85px;
+    width: 100%;
 }
 
 .contact-page .section.content .container .main-content {
