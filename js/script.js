@@ -33,6 +33,10 @@
 
 // jQuery data-tables plugin
     $(document).ready(function(){
-        $('#sd-uploads').DataTable();
+        $('#sd-uploads').DataTable({
+            'bFilter': false,
+            'bInfo' : false,
+            'bLengthChange': false
+        });
     });
 }(window, jQuery));
