@@ -1250,6 +1250,7 @@ button.btn {
 
 .activist-page .content-list tbody tr td .fa {
     color: #05a0c8;
+    cursor: pointer;
     font-size: 18px;
     float: right;
     margin: -16px 0 0 7px;
