@@ -1365,9 +1365,9 @@ button.btn {
 .contact-page .section.content {
     background: url(../images/bg-contact.jpg) center center no-repeat;
     background-size: cover;
-    position: absolute;
-    top: 167px;
-    bottom: 85px;
+    /*position: absolute;*/
+    /*top: 167px;*/
+    /*bottom: 85px;*/
     width: 100%;
 }
 
