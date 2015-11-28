@@ -42,6 +42,6 @@
 
 // jQuery UI datepicker
     $(function() {
-        $( "#datepicker" ).datepicker();
+        $( "#blog-date" ).datepicker($.datepicker.regional[ "ru" ]);
     });
 }(window, jQuery));

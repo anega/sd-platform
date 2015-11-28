@@ -927,7 +927,7 @@ button.btn {
 }
 
 #blog-categories,
-.blog-instruments button {
+#blog-date {
     color: #8c8c8c; 
     font: 400 13px 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 37px;
@@ -951,11 +951,13 @@ button.btn {
     appearance:none;
 }
 
-.blog-instruments button {
+#blog-date {
     background: #e8e8e8;
     border: none;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 2px 10px;
+    text-align: center;
+    width: 145px;
 }
 
 .blogs-page .main-content > ul li {
