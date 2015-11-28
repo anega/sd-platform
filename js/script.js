@@ -35,4 +35,9 @@
     $(document).ready(function(){
         $('#sd-uploads').DataTable();
     });
+
+// jQuery UI datepicker
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
 }(window, jQuery));
